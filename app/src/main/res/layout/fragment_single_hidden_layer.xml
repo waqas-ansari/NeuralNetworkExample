@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waqaansari.neuralnetworkexample.fragments.SingleHiddenLayer">
+
+    <EditText
+        android:id="@+id/edtHiddenLayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/no_of_hidden_layers"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtInputOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/input_one"/>
+        <EditText
+            android:id="@+id/edtInputTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/input_two"/>
+
+        <EditText
+            android:id="@+id/edtOutput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/output"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartLearning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_learning"/>
+
+    <TextView
+        android:id="@+id/txtSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/steps"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+
+</LinearLayout>

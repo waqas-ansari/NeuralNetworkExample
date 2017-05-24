@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waqaansari.neuralnetworkexample.fragments.MultipleHiddenLayers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtHiddenLayers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/no_of_hidden_layers"/>
+
+        <EditText
+            android:id="@+id/edtHiddenNodes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/of_hidden_nodes"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spnNoOfInputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtInputOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/input_one"/>
+        <EditText
+            android:id="@+id/edtInputTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="@string/input_two"/>
+
+        <EditText
+            android:id="@+id/edtOutput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/output"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartLearning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_learning"/>
+
+    <TextView
+        android:id="@+id/txtSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/steps"/>
+
+</LinearLayout>
